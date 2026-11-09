@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link rel="icon" type="image/png" href="/logo.png" />
 <title>Actuali-Thé | Compagnie & Co</title>
 <meta name="description" content="Actuali-Thé : conseils, idées cadeaux et histoire de Compagnie & Co, la plus ancienne marque de thé française.">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;700;900&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -79,7 +78,7 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
 .btn.light{border-color:#fff;color:#fff}
 .btn.light:hover{background:#fff;color:#000}
 .product{display:flex;gap:24px;align-items:center;flex-wrap:wrap;background:var(--cream);border:1px solid var(--gold);padding:24px;margin:36px 0}
-.product .pic{width:130px;height:130px;background:#b3141c;border:3px solid var(--gold);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;font-family:"Bebas Neue",Impact,sans-serif;font-size:20px;letter-spacing:.05em;flex:none}
+.product .pic{width:160px;height:160px;background:#fff;border:3px solid var(--gold);overflow:hidden;flex:none}
 .product .txt{flex:1;min-width:210px}
 .product h3{margin:0 0 4px;font-size:24px}
 .product p{margin:0 0 12px;font-size:15px}
@@ -97,6 +96,11 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
 .faq summary::after{content:"+";float:right;color:var(--gold);font-size:26px;line-height:1}
 .faq[open] summary::after{content:"–"}
 .faq p{margin:0 0 16px}
+.banner img{display:block;width:100%;height:clamp(200px,34vw,460px);object-fit:cover}
+.fig img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.card .img{overflow:hidden;background:var(--cream)}
+.card .img img{display:block;width:100%;height:100%;object-fit:cover}
+.product .pic img{display:block;width:100%;height:100%;object-fit:cover}
 .view{display:none}.view.on{display:block}
 .grid.one{grid-template-columns:minmax(250px,420px);justify-content:center}
 /* related */
@@ -106,7 +110,7 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
 .related .bar{width:70px;height:4px;background:var(--gold);margin:0 auto 30px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
 .card{border:1px solid var(--line);background:var(--card)}
-.card .img{height:150px;background:var(--cream);background-image:repeating-linear-gradient(60deg,rgba(187,155,102,.25) 0 6px,transparent 6px 14px)}
+.card .img{height:190px;background:var(--cream);background-image:repeating-linear-gradient(60deg,rgba(187,155,102,.25) 0 6px,transparent 6px 14px)}
 .card .b{padding:20px}
 .card .cat{font-size:11px}
 .card h3{font-family:"Playfair Display",serif;font-weight:900;font-size:20px;line-height:1.3;margin:6px 0 14px}
@@ -155,10 +159,11 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
   <h1>Actuali-Thé</h1>
   <p class="sub">Conseils, idées cadeaux et histoire de la maison</p>
 </div></section>
+<div class="banner"><img src="banniere_actualithe.png" alt="Tasse de thé, théière et boîte à thé sur une table en marbre"></div>
 <section class="related" style="border-top:0;margin-top:0"><div class="related-in">
   <div class="grid">
-    <div class="card"><div class="img"></div><div class="b"><span class="cat">Idées cadeaux · Décembre 2026</span><h3>Quel thé offrir à Noël ? Nos idées cadeaux par profil</h3><p style="margin:0 0 14px;font-size:15px;line-height:1.6">Thé de Noël, coffrets, calendrier de l'Avent : nos idées pour offrir le thé idéal selon les goûts de chacun.</p><a href="#noel">Lire l'article</a></div></div>
-    <div class="card"><div class="img"></div><div class="b"><span class="cat">La marque · Mars 2027</span><h3>1848 : l'histoire de la plus ancienne marque de thé française</h3><p style="margin:0 0 14px;font-size:15px;line-height:1.6">Fondée à Paris en 1848, Compagnie & Co est la plus ancienne marque de thé française. Découvrez son histoire.</p><a href="#histoire">Lire l'article</a></div></div>
+    <div class="card"><div class="img"><img src="noel_actualithe.png" alt="Tasse de thé devant un sapin de Noël et des cadeaux" loading="lazy"></div><div class="b"><span class="cat">Idées cadeaux · Décembre 2026</span><h3>Quel thé offrir à Noël ? Nos idées cadeaux par profil</h3><p style="margin:0 0 14px;font-size:15px;line-height:1.6">Thé de Noël, coffrets, calendrier de l'Avent : nos idées pour offrir le thé idéal selon les goûts de chacun.</p><a href="#noel">Lire l'article</a></div></div>
+    <div class="card"><div class="img"><img src="1848_actualithe.png" alt="Thé et vue sur Paris avec la tour Eiffel" loading="lazy"></div><div class="b"><span class="cat">La marque · Mars 2027</span><h3>1848 : l'histoire de la plus ancienne marque de thé française</h3><p style="margin:0 0 14px;font-size:15px;line-height:1.6">Fondée à Paris en 1848, Compagnie & Co est la plus ancienne marque de thé française. Découvrez son histoire.</p><a href="#histoire">Lire l'article</a></div></div>
   </div>
 </div></section>
 </main>
@@ -169,6 +174,7 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
   <p class="sub">Nos idées cadeaux par profil</p>
   <div class="meta">Par l'équipe Compagnie & Co · Décembre 2026 · 4 min de lecture</div>
 </div></section>
+<div class="banner"><img src="noel_actualithe.png" alt="Tasse de thé fumante devant un sapin de Noël et des cadeaux"></div>
 <div class="crumbs"><a href="#">Accueil</a> › <a href="#blog">Actuali-Thé</a> › Quel thé offrir à Noël ?</div>
 <article>
   <p class="lead">Thé de Noël, coffrets, calendrier de l'Avent : voici nos idées pour offrir le thé idéal selon les goûts de chacun.</p>
@@ -200,7 +206,7 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
   <p>Il existe en 9 formats, dès 6,20 € : de la boîte métal de luxe au petit format, il s'adapte à tous les budgets, de la petite attention au cadeau principal.</p>
 
   <div class="product">
-    <div class="pic">Visuel<br>produit</div>
+    <div class="pic"><img src="produit-noel-actualithe.png" alt="Boîte Thé de Noël, thé noir amande et cerise" loading="lazy"></div>
     <div class="txt">
       <h3>Thé de Noël®</h3>
       <p>Thé noir, amande & cerise. Existe en 9 formats, dès 6,20 €.</p>
@@ -210,7 +216,7 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
 
   <p>Votre proche préfère les thés plus légers ? Pensez aussi au Thé des Neiges®, un mélange de thé blanc et de thé vert, pomme cuite et fruits rouges.</p>
 
-  <div class="fig"><div>Visuel de l'article<br>(boîte Thé de Noël, tasse, plaid – 1200 × 600 px)</div><small>Légende : le Thé de Noël®, un classique des fêtes.</small></div>
+  <div class="fig"><img src="produit-noel-boite-actualithe.png" alt="Boîte Thé de Noël, thé noir à l'amande et à la cerise, tasse et plaid" loading="lazy"><small>Légende : le Thé de Noël®, un classique des fêtes.</small></div>
 
   <h2 id="curieux">2. Pour le curieux : un coffret découverte</h2>
   <p>Certains aiment avant tout explorer. Pour eux, un coffret est l'idée cadeau idéale : il permet de goûter plusieurs saveurs et de repérer celles qu'on adore, sans s'engager sur un seul thé.</p>
@@ -223,7 +229,7 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
   <p>Il se partage aussi très bien : en famille, entre amis ou entre collègues, il crée un petit rituel quotidien pendant tout le mois de décembre.</p>
 
   <div class="product">
-    <div class="pic">Visuel<br>produit</div>
+    <div class="pic"><img src="produit-noel-calendrier.png" alt="Calendrier de l'Avent thé" style="object-fit:contain" loading="lazy"></div>
     <div class="txt">
       <h3>Calendrier de l'Avent thé</h3>
       <p>Un rendez-vous chaque jour jusqu'à Noël. 29,80 €.</p>
@@ -254,7 +260,7 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
 <section class="related"><div class="related-in">
   <h2>À lire aussi</h2><div class="bar"></div>
   <div class="grid one">
-    <div class="card"><div class="img"></div><div class="b"><span class="cat">La marque</span><h3>1848 : l'histoire de la plus ancienne marque de thé française</h3><a href="#histoire">Lire l'article</a></div></div>
+    <div class="card"><div class="img"><img src="1848_actualithe.png" alt="Thé et vue sur Paris avec la tour Eiffel" loading="lazy"></div><div class="b"><span class="cat">La marque</span><h3>1848 : l'histoire de la plus ancienne marque de thé française</h3><a href="#histoire">Lire l'article</a></div></div>
   </div>
 </div></section>
 </main>
@@ -265,6 +271,7 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
   <p class="sub">Compagnie & Co, une maison de thé née à Paris</p>
   <div class="meta">Par l'équipe Compagnie & Co · Mars 2027 · 4 min de lecture</div>
 </div></section>
+<div class="banner"><img src="1848_actualithe.png" alt="Boîte Compagnie & Co, tasse de thé et vue sur Paris"></div>
 <div class="crumbs"><a href="#">Accueil</a> › <a href="#blog">Actuali-Thé</a> › L'histoire de Compagnie & Co</div>
 <article>
   <p class="lead">Fondée à Paris en 1848, Compagnie & Co est la plus ancienne marque de thé française. Découvrez son histoire.</p>
@@ -285,7 +292,7 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
   <p>C'est à Paris, en 1848, que naît la Compagnie Coloniale. La maison s'installe pour longtemps au 19 avenue de l'Opéra, dans l'un des quartiers les plus élégants de la capitale.</p>
   <p>À ses débuts, elle est spécialisée dans l'importation et la distribution de chocolats. Mais elle s'intéresse très vite au marché du thé, en plein essor à la fin du XIXe siècle, et en fait sa spécialité.</p>
 
-  <div class="fig"><div>Visuel d'archive ou de la boutique historique<br>(avenue de l'Opéra – 1200 × 600 px)</div><small>Légende : la Compagnie Coloniale, installée avenue de l'Opéra à Paris.</small></div>
+  <div class="fig"><img src="compagnie_coloniale.png" alt="La boutique Compagnie Coloniale, avenue de l'Opéra à Paris" loading="lazy"><small>Légende : la Compagnie Coloniale, installée avenue de l'Opéra à Paris.</small></div>
 
   <h2 id="savoir-faire">2. Le savoir-faire : l'aromatisation à la vapeur</h2>
   <p>Compagnie & Co est reconnue pour la qualité de ses thés et pour son procédé unique d'aromatisation à la vapeur. Son métier consiste à sélectionner des plantes de qualité dans les différentes zones de production, puis à les proposer nature ou à établir des mélanges, aromatisés selon des recettes très précises.</p>
@@ -311,7 +318,7 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
   </table></div>
 
   <div class="product">
-    <div class="pic">Visuel<br>produit</div>
+    <div class="pic"><img src="produit_earl-grey.png" alt="Boîte Earl Grey Supérieur Compagnie & Co" loading="lazy"></div>
     <div class="txt">
       <h3>Earl Grey Supérieur</h3>
       <p>Un grand classique des thés parfumés, à la bergamote : l'occasion de goûter le savoir-faire de la maison.</p>
@@ -352,7 +359,7 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
 <section class="related"><div class="related-in">
   <h2>À lire aussi</h2><div class="bar"></div>
   <div class="grid one">
-    <div class="card"><div class="img"></div><div class="b"><span class="cat">Idées cadeaux</span><h3>Quel thé offrir à Noël ? Nos idées cadeaux par profil</h3><a href="#noel">Lire l'article</a></div></div>
+    <div class="card"><div class="img"><img src="noel_actualithe.png" alt="Tasse de thé devant un sapin de Noël et des cadeaux" loading="lazy"></div><div class="b"><span class="cat">Idées cadeaux</span><h3>Quel thé offrir à Noël ? Nos idées cadeaux par profil</h3><a href="#noel">Lire l'article</a></div></div>
   </div>
 </div></section>
 </main>
