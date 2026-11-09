@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bien préparer son thé en vrac | Actuali-Thé – Compagnie & Co</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;700;900&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#BB9B66; --black:#000000; --bg:#ffffff; --ink:#111111; --muted:#6b6258; --cream:#f1e9dc; --line:#e4dccd; --card:#ffffff;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#0d0c0b;--ink:#f3ede3;--muted:#b3a89a;--cream:#1a1714;--line:#2f2a25;--card:#15120f}
+}
+:root[data-theme="dark"]{--bg:#0d0c0b;--ink:#f3ede3;--muted:#b3a89a;--cream:#1a1714;--line:#2f2a25;--card:#15120f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Raleway,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.8}
+h1,h2,h3{margin:0;font-weight:400}
+.display{font-family:"Bebas Neue",Impact,"Arial Narrow",sans-serif;letter-spacing:.01em;text-transform:uppercase}
+.serif{font-family:"Playfair Display",Georgia,serif}
+a{color:inherit}
+
+/* promo */
+.promo{background:var(--gold);color:#000;text-align:center;font-weight:700;font-size:14px;line-height:1.5;padding:12px 16px}
+
+/* header */
+.head{background:#000;color:#fff;position:relative}
+.head-in{max-width:1280px;margin:0 auto;padding:0 24px 0 230px;min-height:178px;display:flex;flex-direction:column;justify-content:center;gap:26px}
+.logo-box{position:absolute;left:max(24px,calc((100% - 1280px)/2 + 24px));top:0;width:190px;background:#fff;color:#000;text-align:center;padding:26px 12px 18px;z-index:3;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.seal{width:124px;height:124px;margin:0 auto 12px;border-radius:50%;border:3px solid #000;display:flex;align-items:center;justify-content:center;position:relative}
+.seal::before{content:"";position:absolute;inset:7px;border-radius:50%;border:1px solid #000}
+.seal b{width:66px;height:66px;border-radius:50%;background:#000;color:#fff;display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-size:19px;font-weight:700;line-height:1}
+.seal span{position:absolute;top:-1px;left:0;right:0;font-size:9px;letter-spacing:.2em;font-weight:700;transform:translateY(-50%);background:#fff;width:92px;margin:0 auto}
+.logo-box p{margin:0;font-family:"Playfair Display",serif;font-size:13px;line-height:1.3}
+.tools{display:flex;align-items:center;gap:22px;font-size:17px;flex-wrap:wrap}
+.search{flex:1;min-width:160px;border-bottom:1px solid #555;padding:4px 0;color:#ddd}
+.tools .dot{color:var(--gold)}
+.tools a{text-decoration:none}
+.badge{display:inline-block;background:var(--gold);color:#000;border-radius:50%;width:20px;height:20px;font-size:11px;text-align:center;line-height:20px;vertical-align:top;margin-right:4px}
+nav{display:flex;gap:30px;flex-wrap:wrap;font-family:"Playfair Display",Georgia,serif;font-weight:900;font-size:19px;text-transform:uppercase;letter-spacing:-.01em}
+nav a{text-decoration:none;color:#fff}
+nav a:first-child,nav a.on{color:var(--gold)}
+nav a:hover{color:var(--gold)}
+.stripes{height:16px;background:repeating-linear-gradient(to bottom,var(--gold) 0 3px,#fff 3px 6px,#000 6px 8px,#fff 8px 11px,#000 11px 13px,#fff 13px 16px)}
+
+/* hero */
+.hero{background:var(--cream);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;opacity:.55;background:repeating-linear-gradient(60deg,rgba(187,155,102,.18) 0 6px,transparent 6px 14px),repeating-linear-gradient(120deg,rgba(187,155,102,.12) 0 6px,transparent 6px 14px)}
+.hero-in{position:relative;max-width:900px;margin:0 auto;padding:70px 24px 64px;text-align:center}
+.cat{display:inline-block;font-family:"Playfair Display",serif;font-weight:700;color:var(--gold);letter-spacing:.2em;text-transform:uppercase;font-size:13px}
+.hero h1{font-family:"Bebas Neue",Impact,sans-serif;text-transform:uppercase;font-size:clamp(44px,8vw,92px);line-height:1;margin:14px 0 18px;color:var(--ink)}
+.hero .sub{font-family:"Playfair Display",serif;font-weight:700;font-size:clamp(18px,2.6vw,26px);margin:0 0 22px}
+.meta{font-size:14px;color:var(--muted)}
+
+/* article */
+.crumbs{max-width:1100px;margin:0 auto;padding:18px 24px 0;font-size:13px;color:var(--muted)}
+.crumbs a{text-decoration:none}
+article{max-width:740px;margin:0 auto;padding:40px 24px 10px}
+.lead{font-family:"Playfair Display",serif;font-size:22px;line-height:1.55;font-weight:700;border-left:4px solid var(--gold);padding-left:20px;margin:0 0 30px}
+article h2{font-family:"Bebas Neue",Impact,sans-serif;text-transform:uppercase;font-size:42px;line-height:1.05;margin:46px 0 16px}
+article h2::after{content:"";display:block;width:70px;height:4px;background:var(--gold);margin-top:10px}
+article h3{font-family:"Playfair Display",serif;font-weight:900;font-size:21px;margin:28px 0 6px}
+article p{margin:0 0 18px}
+.fig{margin:26px 0}
+.fig div{height:300px;background:var(--cream);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:var(--muted);font-family:"Playfair Display",serif;font-size:18px;background-image:repeating-linear-gradient(60deg,rgba(187,155,102,.18) 0 6px,transparent 6px 14px)}
+.fig small{display:block;margin-top:8px;font-size:13px;color:var(--muted);text-align:center}
+.steps{list-style:none;counter-reset:s;padding:0;margin:26px 0}
+.steps li{counter-increment:s;position:relative;padding:18px 20px 18px 84px;border:1px solid var(--line);border-left:4px solid var(--gold);background:var(--card);margin-bottom:12px}
+.steps li::before{content:counter(s);position:absolute;left:20px;top:8px;font-family:"Bebas Neue",Impact,sans-serif;font-size:52px;line-height:1.2;color:var(--gold)}
+.steps b{display:block;font-family:"Playfair Display",serif;font-weight:900;font-size:19px}
+.tw{overflow-x:auto;margin:24px 0}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:15px}
+th{background:#000;color:var(--gold);font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;letter-spacing:.08em;font-size:18px;text-align:left;padding:12px 14px}
+td{padding:12px 14px;border-bottom:1px solid var(--line)}
+blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align:center;font-family:"Playfair Display",serif;font-weight:700;font-size:24px;line-height:1.4;border-top:4px solid var(--gold);border-bottom:4px solid var(--gold)}
+.btn{display:inline-block;border:3px solid #000;color:#000;background:transparent;padding:10px 30px;font-family:"Bebas Neue",Impact,sans-serif;font-size:24px;letter-spacing:.02em;text-decoration:none;text-transform:uppercase;line-height:1.2}
+.btn:hover{background:#000;color:#fff}
+.btn.light{border-color:#fff;color:#fff}
+.btn.light:hover{background:#fff;color:#000}
+.product{display:flex;gap:24px;align-items:center;flex-wrap:wrap;background:var(--cream);border:1px solid var(--gold);padding:24px;margin:36px 0}
+.product .pic{width:130px;height:130px;background:#b3141c;border:3px solid var(--gold);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;font-family:"Bebas Neue",Impact,sans-serif;font-size:20px;letter-spacing:.05em;flex:none}
+.product .txt{flex:1;min-width:210px}
+.product h3{margin:0 0 4px;font-size:24px}
+.product p{margin:0 0 12px;font-size:15px}
+.product .btn{color:#000}
+.product .btn:hover{color:#fff}
+.share{border-top:1px solid var(--line);margin-top:42px;padding-top:20px;font-size:14px;color:var(--muted)}
+
+/* related */
+.related{padding:60px 24px;margin-top:30px;border-top:1px solid var(--line)}
+.related-in{max-width:1100px;margin:0 auto}
+.related h2{font-family:"Bebas Neue",Impact,sans-serif;text-transform:uppercase;font-size:48px;text-align:center;margin-bottom:6px}
+.related .bar{width:70px;height:4px;background:var(--gold);margin:0 auto 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.card{border:1px solid var(--line);background:var(--card)}
+.card .img{height:150px;background:var(--cream);background-image:repeating-linear-gradient(60deg,rgba(187,155,102,.25) 0 6px,transparent 6px 14px)}
+.card .b{padding:20px}
+.card .cat{font-size:11px}
+.card h3{font-family:"Playfair Display",serif;font-weight:900;font-size:20px;line-height:1.3;margin:6px 0 14px}
+.card a{font-family:"Bebas Neue",Impact,sans-serif;font-size:20px;text-decoration:none;color:var(--gold);letter-spacing:.04em}
+
+/* newsletter / footer */
+.news{background:#000;color:#fff;text-align:center;padding:56px 24px}
+.news h2{font-family:"Bebas Neue",Impact,sans-serif;text-transform:uppercase;font-size:44px;color:var(--gold)}
+.news p{margin:6px 0 22px}
+.foot{background:#000;color:#bbb;border-top:1px solid #333;text-align:center;font-size:13px;padding:30px 24px}
+.foot a{margin:0 10px;text-decoration:none;color:#fff}
+.foot .tagline{font-family:"Playfair Display",serif;color:var(--gold);font-size:15px;margin-bottom:12px}
+
+@media(max-width:900px){
+  .head-in{padding:20px 24px 18px;min-height:0;gap:16px}
+  .logo-box{position:static;width:100%;display:flex;align-items:center;gap:14px;padding:14px 20px;text-align:left;box-shadow:none}
+  .seal{width:64px;height:64px;margin:0;flex:none;border-width:2px}.seal::before{inset:4px}.seal b{width:34px;height:34px;font-size:11px}.seal span{display:none}
+  nav{gap:8px 18px;font-size:15px}
+}
+@media(max-width:600px){body{font-size:16px}.lead{font-size:19px}article h2{font-size:34px}.fig div{height:200px}blockquote{font-size:20px}}
+</style>
+</head>
+<body>
+
+<div class="promo">Livraison offerte dès 35€ (France Métropolitaine) jusqu'au 10/11 inclus avec le code LIV35<br>Compagnie & Co x Phildar : 1 pelote de laine et 1 patron offert dans chaque commande</div>
+
+<header class="head">
+  <div class="logo-box">
+    <div class="seal"><span>PARIS</span><b>1848</b></div>
+    <p>Assembler le thé est un art, le déguster un plaisir.</p>
+  </div>
+  <div class="head-in">
+    <div class="tools">
+      <div class="search">Rechercher</div>
+      <span class="dot">•</span><a href="#">Mon compte</a>
+      <span class="dot">•</span><a href="#"><span class="badge">0</span>Mon panier</a>
+      <span class="dot">•</span><span>Fr ⌄</span>
+    </div>
+    <nav>
+      <a href="#">Boutique de Noël</a><a href="#">Calendrier de l'Avent</a><a href="#">Thés</a><a href="#">Sans théine</a><a href="#">Gamme bio</a><a href="#">Coffrets de thés</a><a href="#">Autour du thé</a><a href="#">La marque</a><a class="on" href="#">Actuali-Thé</a>
+    </nav>
+  </div>
+</header>
+<div class="stripes"></div>
+
+<section class="hero"><div class="hero-in">
+  <span class="cat">Conseils & savoir-faire</span>
+  <h1>Bien préparer son thé en vrac</h1>
+  <p class="sub">Le guide pour infuser comme un connaisseur</p>
+  <div class="meta">Par l'équipe Compagnie & Co · 9 novembre 2026 · 4 min de lecture</div>
+</div></section>
+
+<div class="crumbs"><a href="#">Accueil</a> › <a href="#">Actuali-Thé</a> › Bien préparer son thé en vrac</div>
+
+<article>
+  <p class="lead">Préparer son thé ne demande ni matériel sophistiqué ni connaissances d'expert. Il suffit de quelques gestes simples et, surtout, de prendre plaisir à le faire.</p>
+
+  <p>Chez Compagnie & Co, nous sélectionnons nos thés dans les meilleures zones de production avant de les aromatiser selon des recettes précises. Pour en révéler toute la richesse, voici les gestes qui font la différence.</p>
+
+  <div class="fig"><div>Visuel principal de l'article<br>(photo théière, feuilles, tasse – 1200 × 600 px)</div><small>Légende : l'infusion, un moment à savourer.</small></div>
+
+  <h2>Les 4 étapes d'une infusion réussie</h2>
+  <ol class="steps">
+    <li><b>Dosez</b>Comptez environ 2 g de thé en vrac par tasse, à placer dans une boule à thé ou un filtre.</li>
+    <li><b>Chauffez l'eau</b>Ne la faites jamais bouillir : une eau frémissante, autour de 80 °C, préserve les arômes.</li>
+    <li><b>Patientez</b>Laissez infuser environ 3 minutes, puis ajustez selon votre goût.</li>
+    <li><b>Dégustez</b>Retirez les feuilles, respirez, et savourez sans attendre.</li>
+  </ol>
+
+  <h2>Chaque couleur de thé a ses habitudes</h2>
+  <p>Selon le mode de transformation des feuilles, les thés se distinguent par leurs arômes et leurs besoins en infusion. Voici un repère rapide, à adapter à vos préférences.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Type de thé</th><th>Caractère</th><th>Conseil d'infusion</th></tr></thead>
+    <tbody>
+      <tr><td>Thé blanc</td><td>Subtil et raffiné</td><td>Peut infuser plus longtemps</td></tr>
+      <tr><td>Thé vert</td><td>Frais et végétal</td><td>Peut infuser plus longtemps</td></tr>
+      <tr><td>Thé noir</td><td>Rond et corsé</td><td>Environ 3 minutes</td></tr>
+      <tr><td>Thé aromatisé</td><td>Fruité, floral ou épicé</td><td>Environ 3 minutes</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Vrac ou sachet ?</h3>
+  <p>Nos thés existent en vrac dans des boîtes métal ou en sachets de tissu. La qualité est exactement la même : c'est avant tout une question de moment et de praticité.</p>
+
+  <blockquote>Le premier conseil : prendre du plaisir à préparer son thé.</blockquote>
+
+  <div class="product">
+    <div class="pic">Visuel<br>produit</div>
+    <div class="txt">
+      <h3>Earl Grey Supérieur</h3>
+      <p>Le plus célèbre des thés parfumés, à la bergamote. Un classique pour débuter.</p>
+      <a class="btn" href="#">Découvrir</a>
+    </div>
+  </div>
+
+  <h2>Pour aller plus loin</h2>
+  <p>Envie d'explorer les origines (Ceylan, Inde, Chine, Japon…) ou de composer votre routine bien-être avec nos tisanes ? Retrouvez toutes nos sélections sur la boutique en ligne et laissez-vous guider.</p>
+
+  <div class="share">Cet article vous a plu ? Partagez-le · <a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">LinkedIn</a> &nbsp;|&nbsp; #UNTHÉENBONNECOMPAGNIE</div>
+</article>
+
+<section class="related"><div class="related-in">
+  <h2>À lire aussi</h2><div class="bar"></div>
+  <div class="grid">
+    <div class="card"><div class="img"></div><div class="b"><span class="cat">Saison</span><h3>Calendrier de l'Avent 2026 : Noël au coin du feu</h3><a href="#">Lire l'article</a></div></div>
+    <div class="card"><div class="img"></div><div class="b"><span class="cat">Origines</span><h3>Titre de l'article à rédiger</h3><a href="#">Lire l'article</a></div></div>
+    <div class="card"><div class="img"></div><div class="b"><span class="cat">Bien-être</span><h3>Titre de l'article à rédiger</h3><a href="#">Lire l'article</a></div></div>
+  </div>
+</div></section>
+
+<section class="news">
+  <h2>-10% sur votre première commande</h2>
+  <p>Inscrivez-vous à notre newsletter et profitez de votre cadeau de bienvenue.</p>
+  <a class="btn light" href="#">Je m'inscris</a>
+</section>
+
+<footer class="foot">
+  <div class="tagline">#UNTHÉENBONNECOMPAGNIE</div>
+  <div><a href="#">170 ans de passion</a><a href="#">Livraison</a><a href="#">Où nous trouver ?</a><a href="#">CGV</a><a href="#">Mentions légales</a></div>
+  <p>© Compagnie & Co 2026 · Page d'exemple</p>
+</footer>
+</body>
+</html>
