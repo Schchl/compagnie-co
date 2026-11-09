@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Quel thé offrir à Noël ? Nos idées cadeaux par profil | Compagnie & Co</title>
-<meta name="description" content="Thé de Noël, coffrets, calendrier de l'Avent : nos idées pour offrir le thé idéal selon les goûts de chacun.">
+<title>Actuali-Thé | Compagnie & Co</title>
+<meta name="description" content="Actuali-Thé : conseils, idées cadeaux et histoire de Compagnie & Co, la plus ancienne marque de thé française.">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;700;900&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -96,6 +96,8 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
 .faq summary::after{content:"+";float:right;color:var(--gold);font-size:26px;line-height:1}
 .faq[open] summary::after{content:"–"}
 .faq p{margin:0 0 16px}
+.view{display:none}.view.on{display:block}
+.grid.one{grid-template-columns:minmax(250px,420px);justify-content:center}
 /* related */
 .related{padding:60px 24px;margin-top:30px;border-top:1px solid var(--line)}
 .related-in{max-width:1100px;margin:0 auto}
@@ -131,7 +133,7 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
 <div class="promo">Livraison offerte dès 35€ (France Métropolitaine) jusqu'au 10/11 inclus avec le code LIV35<br>Compagnie & Co x Phildar : 1 pelote de laine et 1 patron offert dans chaque commande</div>
 
 <header class="head">
-  <a class="logo-box" href="#"><img alt="Compagnie & Co – Assembler le thé est un art, le déguster un plaisir" src="logo.png"></a>
+  <a class="logo-box" href="#blog"><img alt="Compagnie & Co – Assembler le thé est un art, le déguster un plaisir" src="logo.png"></a>
   <div class="head-in">
     <div class="tools">
       <div class="search">Rechercher</div>
@@ -140,21 +142,33 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
       <span class="dot">•</span><span>Fr ⌄</span>
     </div>
     <nav>
-      <a href="#">Boutique de Noël</a><a href="#">Calendrier de l'Avent</a><a href="#">Thés</a><a href="#">Sans théine</a><a href="#">Gamme bio</a><a href="#">Coffrets de thés</a><a href="#">Autour du thé</a><a href="#">La marque</a><a class="on" href="#">Actuali-Thé</a>
+      <a href="#">Boutique de Noël</a><a href="#">Calendrier de l'Avent</a><a href="#">Thés</a><a href="#">Sans théine</a><a href="#">Gamme bio</a><a href="#">Coffrets de thés</a><a href="#">Autour du thé</a><a href="#">La marque</a><a class="on" href="#blog">Actuali-Thé</a>
     </nav>
   </div>
 </header>
 <div class="stripes"></div>
 
+<main class="view on" id="v-blog" data-title="Actuali-Thé | Compagnie & Co">
+<section class="hero"><div class="hero-in">
+  <span class="cat">Le blog</span>
+  <h1>Actuali-Thé</h1>
+  <p class="sub">Conseils, idées cadeaux et histoire de la maison</p>
+</div></section>
+<section class="related" style="border-top:0;margin-top:0"><div class="related-in">
+  <div class="grid">
+    <div class="card"><div class="img"></div><div class="b"><span class="cat">Idées cadeaux · Décembre 2026</span><h3>Quel thé offrir à Noël ? Nos idées cadeaux par profil</h3><p style="margin:0 0 14px;font-size:15px;line-height:1.6">Thé de Noël, coffrets, calendrier de l'Avent : nos idées pour offrir le thé idéal selon les goûts de chacun.</p><a href="#noel">Lire l'article</a></div></div>
+    <div class="card"><div class="img"></div><div class="b"><span class="cat">La marque · Mars 2027</span><h3>1848 : l'histoire de la plus ancienne marque de thé française</h3><p style="margin:0 0 14px;font-size:15px;line-height:1.6">Fondée à Paris en 1848, Compagnie & Co est la plus ancienne marque de thé française. Découvrez son histoire.</p><a href="#histoire">Lire l'article</a></div></div>
+  </div>
+</div></section>
+</main>
+<main class="view" id="v-noel" data-title="Quel thé offrir à Noël ? Nos idées cadeaux par profil | Compagnie & Co">
 <section class="hero"><div class="hero-in">
   <span class="cat">Idées cadeaux · Noël</span>
   <h1>Quel thé offrir à Noël ?</h1>
   <p class="sub">Nos idées cadeaux par profil</p>
   <div class="meta">Par l'équipe Compagnie & Co · Décembre 2026 · 4 min de lecture</div>
 </div></section>
-
-<div class="crumbs"><a href="#">Accueil</a> › <a href="#">Actuali-Thé</a> › Quel thé offrir à Noël ?</div>
-
+<div class="crumbs"><a href="#">Accueil</a> › <a href="#blog">Actuali-Thé</a> › Quel thé offrir à Noël ?</div>
 <article>
   <p class="lead">Thé de Noël, coffrets, calendrier de l'Avent : voici nos idées pour offrir le thé idéal selon les goûts de chacun.</p>
 
@@ -162,11 +176,11 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
 
   <nav class="toc" aria-label="Sommaire"><b>Au sommaire</b>
     <ol>
-      <li><a href="#gourmand">Pour le gourmand : le Thé de Noël</a></li>
-      <li><a href="#curieux">Pour le curieux : un coffret découverte</a></li>
-      <li><a href="#avent">Pour patienter : le calendrier de l'Avent</a></li>
-      <li><a href="#sans-theine">Sans théine : rooibos et tisanes</a></li>
-      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#" data-go="gourmand">Pour le gourmand : le Thé de Noël</a></li>
+      <li><a href="#" data-go="curieux">Pour le curieux : un coffret découverte</a></li>
+      <li><a href="#" data-go="avent">Pour patienter : le calendrier de l'Avent</a></li>
+      <li><a href="#" data-go="sans-theine">Sans théine : rooibos et tisanes</a></li>
+      <li><a href="#" data-go="faq">FAQ</a></li>
     </ol>
   </nav>
 
@@ -236,16 +250,111 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
 
   <div class="share">Cet article vous a plu ? Partagez-le · <a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">LinkedIn</a> &nbsp;|&nbsp; #UNTHÉENBONNECOMPAGNIE</div>
 </article>
-
 <section class="related"><div class="related-in">
   <h2>À lire aussi</h2><div class="bar"></div>
-  <div class="grid">
-    <div class="card"><div class="img"></div><div class="b"><span class="cat">Saison</span><h3>Calendrier de l'Avent 2026 : Noël au coin du feu</h3><a href="#">Lire l'article</a></div></div>
-    <div class="card"><div class="img"></div><div class="b"><span class="cat">Conseils</span><h3>Bien préparer son thé en vrac</h3><a href="#">Lire l'article</a></div></div>
-    <div class="card"><div class="img"></div><div class="b"><span class="cat">Bien-être</span><h3>Titre de l'article à rédiger</h3><a href="#">Lire l'article</a></div></div>
+  <div class="grid one">
+    <div class="card"><div class="img"></div><div class="b"><span class="cat">La marque</span><h3>1848 : l'histoire de la plus ancienne marque de thé française</h3><a href="#histoire">Lire l'article</a></div></div>
   </div>
 </div></section>
+</main>
+<main class="view" id="v-histoire" data-title="1848 : l'histoire de la plus ancienne marque de thé française | Compagnie & Co">
+<section class="hero"><div class="hero-in">
+  <span class="cat">La marque · Histoire</span>
+  <h1>1848 : l'histoire de la plus ancienne marque de thé française</h1>
+  <p class="sub">Compagnie & Co, une maison de thé née à Paris</p>
+  <div class="meta">Par l'équipe Compagnie & Co · Mars 2027 · 4 min de lecture</div>
+</div></section>
+<div class="crumbs"><a href="#">Accueil</a> › <a href="#blog">Actuali-Thé</a> › L'histoire de Compagnie & Co</div>
+<article>
+  <p class="lead">Fondée à Paris en 1848, Compagnie & Co est la plus ancienne marque de thé française. Découvrez son histoire.</p>
 
+  <p>Fondée à Paris en 1848 sous le nom de Compagnie Coloniale, Compagnie & Co est la plus ancienne marque de thé française. D'abord spécialisée dans le chocolat, la maison fait du thé sa spécialité à la fin du XIXe siècle. Ses thés sont aujourd'hui préparés dans ses ateliers de Dissay, dans la Vienne.</p>
+
+  <nav class="toc" aria-label="Sommaire"><b>Au sommaire</b>
+    <ol>
+      <li><a href="#" data-go="debuts">Des débuts dans le chocolat, avenue de l'Opéra</a></li>
+      <li><a href="#" data-go="savoir-faire">Le savoir-faire : l'aromatisation à la vapeur</a></li>
+      <li><a href="#" data-go="nom">De Compagnie Coloniale à Compagnie & Co</a></li>
+      <li><a href="#" data-go="essentiel">L'essentiel en bref</a></li>
+      <li><a href="#" data-go="faq-h">FAQ</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="debuts">1. Des débuts dans le chocolat, avenue de l'Opéra</h2>
+  <p>C'est à Paris, en 1848, que naît la Compagnie Coloniale. La maison s'installe pour longtemps au 19 avenue de l'Opéra, dans l'un des quartiers les plus élégants de la capitale.</p>
+  <p>À ses débuts, elle est spécialisée dans l'importation et la distribution de chocolats. Mais elle s'intéresse très vite au marché du thé, en plein essor à la fin du XIXe siècle, et en fait sa spécialité.</p>
+
+  <div class="fig"><div>Visuel d'archive ou de la boutique historique<br>(avenue de l'Opéra – 1200 × 600 px)</div><small>Légende : la Compagnie Coloniale, installée avenue de l'Opéra à Paris.</small></div>
+
+  <h2 id="savoir-faire">2. Le savoir-faire : l'aromatisation à la vapeur</h2>
+  <p>Compagnie & Co est reconnue pour la qualité de ses thés et pour son procédé unique d'aromatisation à la vapeur. Son métier consiste à sélectionner des plantes de qualité dans les différentes zones de production, puis à les proposer nature ou à établir des mélanges, aromatisés selon des recettes très précises.</p>
+  <p>Aujourd'hui, les thés sont préparés et conditionnés en France, dans les ateliers de Dissay, dans la Vienne. Ils se trouvent en vrac dans des boîtes métal ou en sachets de tissu, avec exactement la même qualité.</p>
+
+  <blockquote>Assembler le thé est un art, le déguster un plaisir.</blockquote>
+
+  <h2 id="nom">3. De Compagnie Coloniale à Compagnie & Co</h2>
+  <p>La maison, alors nommée Compagnie Coloniale, est aujourd'hui connue sous le nom de Compagnie & Co. Un changement de nom, mais la même histoire : celle de la plus ancienne marque de thé française, qui perpétue un savoir-faire né en 1848.</p>
+  <p>Aujourd'hui, la marque propose une large gamme de thés blancs, verts, noirs, aromatisés et bio, ainsi que des rooibos et des tisanes. Elle s'engage également pour des causes qui lui tiennent à cœur, et tous ses emballages sont recyclables.</p>
+
+  <h2 id="essentiel">4. L'essentiel en bref</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Repère</th><th>À retenir</th></tr></thead>
+    <tbody>
+      <tr><td>1848</td><td>Fondation à Paris de la Compagnie Coloniale</td></tr>
+      <tr><td>Premiers produits</td><td>Importation et distribution de chocolats</td></tr>
+      <tr><td>Fin du XIXe siècle</td><td>Le thé devient la spécialité de la maison</td></tr>
+      <tr><td>Adresse historique</td><td>19 avenue de l'Opéra, Paris</td></tr>
+      <tr><td>Savoir-faire</td><td>Aromatisation à la vapeur</td></tr>
+      <tr><td>Aujourd'hui</td><td>Thés préparés à Dissay (Vienne)</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="product">
+    <div class="pic">Visuel<br>produit</div>
+    <div class="txt">
+      <h3>Earl Grey Supérieur</h3>
+      <p>Un grand classique des thés parfumés, à la bergamote : l'occasion de goûter le savoir-faire de la maison.</p>
+      <a class="btn" href="#">Découvrir</a>
+    </div>
+  </div>
+
+  <h2 id="faq-h">5. FAQ</h2>
+  <details class="faq" open>
+    <summary>Quelle est la plus ancienne marque de thé française ?</summary>
+    <p>Compagnie & Co, anciennement Compagnie Coloniale, fondée en 1848.</p>
+  </details>
+  <details class="faq">
+    <summary>Où est né Compagnie & Co ?</summary>
+    <p>À Paris, en 1848. La maison s'est installée au 19 avenue de l'Opéra.</p>
+  </details>
+  <details class="faq">
+    <summary>Où sont préparés les thés Compagnie & Co ?</summary>
+    <p>Dans les ateliers de Dissay, dans la Vienne. Les thés sont préparés et conditionnés en France.</p>
+  </details>
+  <details class="faq">
+    <summary>Qu'est-ce que l'aromatisation à la vapeur ?</summary>
+    <p>C'est le procédé unique par lequel Compagnie & Co aromatise ses thés, selon des recettes très précises.</p>
+  </details>
+
+  <div class="share">Cet article vous a plu ? Partagez-le · <a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">LinkedIn</a> &nbsp;|&nbsp; #UNTHÉENBONNECOMPAGNIE</div>
+</article>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Article","headline":"1848 : l'histoire de la plus ancienne marque de thé française","description":"Fondée à Paris en 1848, Compagnie & Co est la plus ancienne marque de thé française.","datePublished":"2027-03-01","author":{"@type":"Organization","name":"Compagnie & Co"},"publisher":{"@type":"Organization","name":"Compagnie & Co"},"inLanguage":"fr"},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Quelle est la plus ancienne marque de thé française ?","acceptedAnswer":{"@type":"Answer","text":"Compagnie & Co, anciennement Compagnie Coloniale, fondée en 1848."}},
+{"@type":"Question","name":"Où est né Compagnie & Co ?","acceptedAnswer":{"@type":"Answer","text":"À Paris, en 1848. La maison s'est installée au 19 avenue de l'Opéra."}},
+{"@type":"Question","name":"Où sont préparés les thés Compagnie & Co ?","acceptedAnswer":{"@type":"Answer","text":"Dans les ateliers de Dissay, dans la Vienne. Les thés sont préparés et conditionnés en France."}},
+{"@type":"Question","name":"Qu'est-ce que l'aromatisation à la vapeur ?","acceptedAnswer":{"@type":"Answer","text":"C'est le procédé unique par lequel Compagnie & Co aromatise ses thés, selon des recettes très précises."}}
+]}]}
+</script>
+<section class="related"><div class="related-in">
+  <h2>À lire aussi</h2><div class="bar"></div>
+  <div class="grid one">
+    <div class="card"><div class="img"></div><div class="b"><span class="cat">Idées cadeaux</span><h3>Quel thé offrir à Noël ? Nos idées cadeaux par profil</h3><a href="#noel">Lire l'article</a></div></div>
+  </div>
+</div></section>
+</main>
 <section class="news">
   <h2>-10% sur votre première commande</h2>
   <p>Inscrivez-vous à notre newsletter et profitez de votre cadeau de bienvenue.</p>
@@ -257,5 +366,34 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
   <div><a href="#">170 ans de passion</a><a href="#">Livraison</a><a href="#">Où nous trouver ?</a><a href="#">CGV</a><a href="#">Mentions légales</a></div>
   <p>© Compagnie & Co 2026 · Page d'exemple</p>
 </footer>
+<script>
+(function(){
+  var routes={blog:1,noel:1,histoire:1};
+  function show(){
+    var r=(location.hash||"").replace("#","");
+    if(!routes[r]) r="blog";
+    var vs=document.querySelectorAll(".view");
+    for(var i=0;i<vs.length;i++){vs[i].classList.toggle("on",vs[i].id==="v-"+r);}
+    var v=document.getElementById("v-"+r);
+    document.title=v.getAttribute("data-title");
+    window.scrollTo(0,0);
+  }
+  window.addEventListener("hashchange",show);
+  document.addEventListener("click",function(e){
+    var a=e.target.closest&&e.target.closest("a");
+    if(!a) return;
+    var go=a.getAttribute("data-go");
+    if(go){
+      e.preventDefault();
+      var v=document.querySelector(".view.on");
+      var t=v&&v.querySelector("#"+go);
+      if(t) t.scrollIntoView({behavior:"smooth",block:"start"});
+      return;
+    }
+    if(a.getAttribute("href")==="#") e.preventDefault();
+  });
+  show();
+})();
+</script>
 </body>
 </html>
