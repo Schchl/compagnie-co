@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Bien préparer son thé en vrac | Actuali-Thé – Compagnie & Co</title>
+<title>Quel thé offrir à Noël ? Nos idées cadeaux par profil | Compagnie & Co</title>
+<meta name="description" content="Thé de Noël, coffrets, calendrier de l'Avent : nos idées pour offrir le thé idéal selon les goûts de chacun.">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;700;900&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -28,12 +29,8 @@ a{color:inherit}
 /* header */
 .head{background:#000;color:#fff;position:relative}
 .head-in{max-width:1280px;margin:0 auto;padding:0 24px 0 230px;min-height:178px;display:flex;flex-direction:column;justify-content:center;gap:26px}
-.logo-box{position:absolute;left:max(24px,calc((100% - 1280px)/2 + 24px));top:0;width:190px;background:#fff;color:#000;text-align:center;padding:26px 12px 18px;z-index:3;box-shadow:0 4px 12px rgba(0,0,0,.25)}
-.seal{width:124px;height:124px;margin:0 auto 12px;border-radius:50%;border:3px solid #000;display:flex;align-items:center;justify-content:center;position:relative}
-.seal::before{content:"";position:absolute;inset:7px;border-radius:50%;border:1px solid #000}
-.seal b{width:66px;height:66px;border-radius:50%;background:#000;color:#fff;display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-size:19px;font-weight:700;line-height:1}
-.seal span{position:absolute;top:-1px;left:0;right:0;font-size:9px;letter-spacing:.2em;font-weight:700;transform:translateY(-50%);background:#fff;width:92px;margin:0 auto}
-.logo-box p{margin:0;font-family:"Playfair Display",serif;font-size:13px;line-height:1.3}
+.logo-box{position:absolute;left:max(24px,calc((100% - 1280px)/2 + 24px));top:0;width:190px;background:#fff;color:#000;text-align:center;padding:14px 10px 6px;z-index:3;display:block;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.logo-box img{display:block;width:100%;height:auto}
 .tools{display:flex;align-items:center;gap:22px;font-size:17px;flex-wrap:wrap}
 .search{flex:1;min-width:160px;border-bottom:1px solid #555;padding:4px 0;color:#ddd}
 .tools .dot{color:var(--gold)}
@@ -59,6 +56,7 @@ nav a:hover{color:var(--gold)}
 .crumbs a{text-decoration:none}
 article{max-width:740px;margin:0 auto;padding:40px 24px 10px}
 .lead{font-family:"Playfair Display",serif;font-size:22px;line-height:1.55;font-weight:700;border-left:4px solid var(--gold);padding-left:20px;margin:0 0 30px}
+article h2,article h3{scroll-margin-top:20px}
 article h2{font-family:"Bebas Neue",Impact,sans-serif;text-transform:uppercase;font-size:42px;line-height:1.05;margin:46px 0 16px}
 article h2::after{content:"";display:block;width:70px;height:4px;background:var(--gold);margin-top:10px}
 article h3{font-family:"Playfair Display",serif;font-weight:900;font-size:21px;margin:28px 0 6px}
@@ -88,6 +86,16 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
 .product .btn:hover{color:#fff}
 .share{border-top:1px solid var(--line);margin-top:42px;padding-top:20px;font-size:14px;color:var(--muted)}
 
+
+.toc{background:var(--cream);border-left:4px solid var(--gold);padding:20px 24px;margin:26px 0}
+.toc b{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;font-size:26px;letter-spacing:.04em;text-transform:uppercase;display:block;margin-bottom:6px}
+.toc ol{margin:0;padding-left:20px}.toc a{text-decoration:none;font-weight:600}.toc a:hover{color:var(--gold)}
+.faq{border:1px solid var(--line);border-left:4px solid var(--gold);background:var(--card);margin-bottom:12px;padding:0 20px}
+.faq summary{cursor:pointer;font-family:"Playfair Display",serif;font-weight:900;font-size:19px;padding:16px 0;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";float:right;color:var(--gold);font-size:26px;line-height:1}
+.faq[open] summary::after{content:"–"}
+.faq p{margin:0 0 16px}
 /* related */
 .related{padding:60px 24px;margin-top:30px;border-top:1px solid var(--line)}
 .related-in{max-width:1100px;margin:0 auto}
@@ -111,8 +119,8 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
 
 @media(max-width:900px){
   .head-in{padding:20px 24px 18px;min-height:0;gap:16px}
-  .logo-box{position:static;width:100%;display:flex;align-items:center;gap:14px;padding:14px 20px;text-align:left;box-shadow:none}
-  .seal{width:64px;height:64px;margin:0;flex:none;border-width:2px}.seal::before{inset:4px}.seal b{width:34px;height:34px;font-size:11px}.seal span{display:none}
+  .logo-box{position:static;width:100%;padding:8px 20px;box-shadow:none}
+  .logo-box img{width:150px;margin:0 auto}
   nav{gap:8px 18px;font-size:15px}
 }
 @media(max-width:600px){body{font-size:16px}.lead{font-size:19px}article h2{font-size:34px}.fig div{height:200px}blockquote{font-size:20px}}
@@ -123,10 +131,7 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
 <div class="promo">Livraison offerte dès 35€ (France Métropolitaine) jusqu'au 10/11 inclus avec le code LIV35<br>Compagnie & Co x Phildar : 1 pelote de laine et 1 patron offert dans chaque commande</div>
 
 <header class="head">
-  <div class="logo-box">
-    <div class="seal"><span>PARIS</span><b>1848</b></div>
-    <p>Assembler le thé est un art, le déguster un plaisir.</p>
-  </div>
+  <a class="logo-box" href="#"><img alt="Compagnie & Co – Assembler le thé est un art, le déguster un plaisir" src="logo.png"></a>
   <div class="head-in">
     <div class="tools">
       <div class="search">Rechercher</div>
@@ -142,57 +147,92 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
 <div class="stripes"></div>
 
 <section class="hero"><div class="hero-in">
-  <span class="cat">Conseils & savoir-faire</span>
-  <h1>Bien préparer son thé en vrac</h1>
-  <p class="sub">Le guide pour infuser comme un connaisseur</p>
-  <div class="meta">Par l'équipe Compagnie & Co · 9 novembre 2026 · 4 min de lecture</div>
+  <span class="cat">Idées cadeaux · Noël</span>
+  <h1>Quel thé offrir à Noël ?</h1>
+  <p class="sub">Nos idées cadeaux par profil</p>
+  <div class="meta">Par l'équipe Compagnie & Co · Décembre 2026 · 4 min de lecture</div>
 </div></section>
 
-<div class="crumbs"><a href="#">Accueil</a> › <a href="#">Actuali-Thé</a> › Bien préparer son thé en vrac</div>
+<div class="crumbs"><a href="#">Accueil</a> › <a href="#">Actuali-Thé</a> › Quel thé offrir à Noël ?</div>
 
 <article>
-  <p class="lead">Préparer son thé ne demande ni matériel sophistiqué ni connaissances d'expert. Il suffit de quelques gestes simples et, surtout, de prendre plaisir à le faire.</p>
+  <p class="lead">Thé de Noël, coffrets, calendrier de l'Avent : voici nos idées pour offrir le thé idéal selon les goûts de chacun.</p>
 
-  <p>Chez Compagnie & Co, nous sélectionnons nos thés dans les meilleures zones de production avant de les aromatiser selon des recettes précises. Pour en révéler toute la richesse, voici les gestes qui font la différence.</p>
+  <p>Vous ne savez pas quel thé offrir ? Pour un gourmand, misez sur le Thé de Noël, un thé noir à l'amande et à la cerise. Pour un curieux, un coffret permet de goûter plusieurs saveurs. Et pour ceux qui évitent la théine, le rooibos se déguste même le soir.</p>
 
-  <div class="fig"><div>Visuel principal de l'article<br>(photo théière, feuilles, tasse – 1200 × 600 px)</div><small>Légende : l'infusion, un moment à savourer.</small></div>
+  <nav class="toc" aria-label="Sommaire"><b>Au sommaire</b>
+    <ol>
+      <li><a href="#gourmand">Pour le gourmand : le Thé de Noël</a></li>
+      <li><a href="#curieux">Pour le curieux : un coffret découverte</a></li>
+      <li><a href="#avent">Pour patienter : le calendrier de l'Avent</a></li>
+      <li><a href="#sans-theine">Sans théine : rooibos et tisanes</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
 
-  <h2>Les 4 étapes d'une infusion réussie</h2>
-  <ol class="steps">
-    <li><b>Dosez</b>Comptez environ 2 g de thé en vrac par tasse, à placer dans une boule à thé ou un filtre.</li>
-    <li><b>Chauffez l'eau</b>Ne la faites jamais bouillir : une eau frémissante, autour de 80 °C, préserve les arômes.</li>
-    <li><b>Patientez</b>Laissez infuser environ 3 minutes, puis ajustez selon votre goût.</li>
-    <li><b>Dégustez</b>Retirez les feuilles, respirez, et savourez sans attendre.</li>
-  </ol>
-
-  <h2>Chaque couleur de thé a ses habitudes</h2>
-  <p>Selon le mode de transformation des feuilles, les thés se distinguent par leurs arômes et leurs besoins en infusion. Voici un repère rapide, à adapter à vos préférences.</p>
   <div class="tw"><table>
-    <thead><tr><th>Type de thé</th><th>Caractère</th><th>Conseil d'infusion</th></tr></thead>
+    <thead><tr><th>Pour qui ?</th><th>Notre idée</th><th>Pourquoi ?</th></tr></thead>
     <tbody>
-      <tr><td>Thé blanc</td><td>Subtil et raffiné</td><td>Peut infuser plus longtemps</td></tr>
-      <tr><td>Thé vert</td><td>Frais et végétal</td><td>Peut infuser plus longtemps</td></tr>
-      <tr><td>Thé noir</td><td>Rond et corsé</td><td>Environ 3 minutes</td></tr>
-      <tr><td>Thé aromatisé</td><td>Fruité, floral ou épicé</td><td>Environ 3 minutes</td></tr>
+      <tr><td>Le gourmand</td><td>Thé de Noël®</td><td>Thé noir, amande & cerise</td></tr>
+      <tr><td>Le curieux</td><td>Coffret découverte</td><td>Plusieurs saveurs à goûter</td></tr>
+      <tr><td>Celui qui patiente</td><td>Calendrier de l'Avent</td><td>Un rendez-vous jusqu'à Noël</td></tr>
+      <tr><td>Sans théine</td><td>Rooibos & tisanes</td><td>Aucune théine, même le soir</td></tr>
     </tbody>
   </table></div>
 
-  <h3>Vrac ou sachet ?</h3>
-  <p>Nos thés existent en vrac dans des boîtes métal ou en sachets de tissu. La qualité est exactement la même : c'est avant tout une question de moment et de praticité.</p>
-
-  <blockquote>Le premier conseil : prendre du plaisir à préparer son thé.</blockquote>
+  <h2 id="gourmand">1. Pour le gourmand : le Thé de Noël</h2>
+  <p>Pour une personne qui aime les saveurs douces et réconfortantes, le Thé de Noël® est un choix évident. Ce thé noir associe l'amande et la cerise : un mariage gourmand, parfait pour les après-midis d'hiver.</p>
+  <p>Il existe en 9 formats, dès 6,20 € : de la boîte métal de luxe au petit format, il s'adapte à tous les budgets, de la petite attention au cadeau principal.</p>
 
   <div class="product">
     <div class="pic">Visuel<br>produit</div>
     <div class="txt">
-      <h3>Earl Grey Supérieur</h3>
-      <p>Le plus célèbre des thés parfumés, à la bergamote. Un classique pour débuter.</p>
+      <h3>Thé de Noël®</h3>
+      <p>Thé noir, amande & cerise. Existe en 9 formats, dès 6,20 €.</p>
       <a class="btn" href="#">Découvrir</a>
     </div>
   </div>
 
-  <h2>Pour aller plus loin</h2>
-  <p>Envie d'explorer les origines (Ceylan, Inde, Chine, Japon…) ou de composer votre routine bien-être avec nos tisanes ? Retrouvez toutes nos sélections sur la boutique en ligne et laissez-vous guider.</p>
+  <p>Votre proche préfère les thés plus légers ? Pensez aussi au Thé des Neiges®, un mélange de thé blanc et de thé vert, pomme cuite et fruits rouges.</p>
+
+  <div class="fig"><div>Visuel de l'article<br>(boîte Thé de Noël, tasse, plaid – 1200 × 600 px)</div><small>Légende : le Thé de Noël®, un classique des fêtes.</small></div>
+
+  <h2 id="curieux">2. Pour le curieux : un coffret découverte</h2>
+  <p>Certains aiment avant tout explorer. Pour eux, un coffret est l'idée cadeau idéale : il permet de goûter plusieurs saveurs et de repérer celles qu'on adore, sans s'engager sur un seul thé.</p>
+  <p>La collection de Noël réunit plusieurs créations, du Thé de Noël® au Thé des Neiges®, en passant par l'Hiver Austral®, l'Étoile d'Orient® ou la Douceur des Cimes®. C'est aussi une bonne solution quand on ne connaît pas encore les goûts de la personne.</p>
+
+  <blockquote>Un coffret, c'est l'occasion de goûter plusieurs saveurs.</blockquote>
+
+  <h2 id="avent">3. Pour patienter : le calendrier de l'Avent</h2>
+  <p>Pour faire durer le plaisir jusqu'au 24 décembre, le calendrier de l'Avent thé est un cadeau qui se savoure jour après jour. Nouveauté de la saison, il est proposé à 29,80 €.</p>
+  <p>Il se partage aussi très bien : en famille, entre amis ou entre collègues, il crée un petit rituel quotidien pendant tout le mois de décembre.</p>
+
+  <div class="product">
+    <div class="pic">Visuel<br>produit</div>
+    <div class="txt">
+      <h3>Calendrier de l'Avent thé</h3>
+      <p>Un rendez-vous chaque jour jusqu'à Noël. 29,80 €.</p>
+      <a class="btn" href="#">Découvrir</a>
+    </div>
+  </div>
+
+  <h2 id="sans-theine">4. Sans théine : rooibos et tisanes</h2>
+  <p>Tout le monde ne souhaite pas, ou ne peut pas, boire de théine. Pour ces personnes, tournez-vous vers le rooibos et les tisanes : ils n'en contiennent pas.</p>
+  <p>Le rooibos se déguste même le soir. Quant aux tisanes, elles accompagnent aussi bien les moments de détente que la routine de la journée : sommeil, bien-être, énergie… Il y en a pour tous les besoins.</p>
+
+  <h2 id="faq">5. FAQ</h2>
+  <details class="faq" open>
+    <summary>Quel thé offrir à quelqu'un qui n'aime pas la théine ?</summary>
+    <p>Un rooibos ou une tisane : ils n'en contiennent pas.</p>
+  </details>
+  <details class="faq">
+    <summary>Quel thé offrir quand on ne connaît pas les goûts de la personne ?</summary>
+    <p>Le Thé de Noël®, gourmand, ou un coffret découverte qui permet de goûter plusieurs saveurs.</p>
+  </details>
+  <details class="faq">
+    <summary>Peut-on offrir une carte cadeau ?</summary>
+    <p>Oui, des e-cartes cadeaux Compagnie & Co sont disponibles sur la boutique en ligne.</p>
+  </details>
 
   <div class="share">Cet article vous a plu ? Partagez-le · <a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">LinkedIn</a> &nbsp;|&nbsp; #UNTHÉENBONNECOMPAGNIE</div>
 </article>
@@ -201,7 +241,7 @@ blockquote{margin:36px 0;padding:30px 28px;background:#000;color:#fff;text-align
   <h2>À lire aussi</h2><div class="bar"></div>
   <div class="grid">
     <div class="card"><div class="img"></div><div class="b"><span class="cat">Saison</span><h3>Calendrier de l'Avent 2026 : Noël au coin du feu</h3><a href="#">Lire l'article</a></div></div>
-    <div class="card"><div class="img"></div><div class="b"><span class="cat">Origines</span><h3>Titre de l'article à rédiger</h3><a href="#">Lire l'article</a></div></div>
+    <div class="card"><div class="img"></div><div class="b"><span class="cat">Conseils</span><h3>Bien préparer son thé en vrac</h3><a href="#">Lire l'article</a></div></div>
     <div class="card"><div class="img"></div><div class="b"><span class="cat">Bien-être</span><h3>Titre de l'article à rédiger</h3><a href="#">Lire l'article</a></div></div>
   </div>
 </div></section>
